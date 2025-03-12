@@ -1,0 +1,57 @@
+2025-03-11 stl 2주차 1일
+
+c++  사용하지 말아야할 것들 			 대체품		더 좋을 수 있는것
+
+1. char* 	(문자열을 저장하기 위한 용도)  ->	string		->	string_view
+2. T *		(일반적 포인터)			   -> unique_ptr<T>
+							        shared_ptr<T>
+3. T[N]						   -> array<T,N>
+
+
+Dog 자료형에서 
+a = b         
+a.operator=(b)	기능적으로 같은 특별한 순간임
+
+
+템플릿은 선언과 정의를 나누지 않고 동시에 한다.
+
+
+	change(a, b);
+	// 1. change(DOg, Dog);	있니?
+	// 2. change(Dog&, Dog&); 동시에 존재시 (모호하다.)
+	// 3. 컴파일러가 template을 이용하여 코드 생성
+
+
+
+3 인 경우 컴파일러가 하는 일
+
+template <class T>
+void change(T& a, T& b)
+{
+	T temp{ a };
+	a = b;
+	b = temp;
+}
+
+->>>
+
+(함수를 템플릿화)
+template <>
+void change(Dog& a, Dog& b)
+{
+	Dog temp{ a };
+	a = b;
+	b = temp;
+}
+
+이와 같이 바꾼다.
+
+// 
+default_random_engine dre; 
+
+std::random_device rd;
+std::mt19937 gen(rd());
+
+default 랜덤 엔진과 같다.
+//
+

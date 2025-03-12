@@ -1,0 +1,21 @@
+﻿  메인.cpp
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(14,16): error C2039: 'string_view': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(14,6): error C2182: 'save': 이 'void' 사용은 유효하지 않습니다.
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(14,16): error C2065: 'string_view': 선언되지 않은 식별자입니다.
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(22,2): error C2064: 항은 1개의 인수를 받아들이는 함수로 계산되지 않습니다.
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(26,16): error C2039: 'string_view': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(26,6): error C2182: 'save': 이 'void' 사용은 유효하지 않습니다.
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(26,6): error C2374: 'save': 재정의. 여러 번 초기화했습니다.
+      C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(14,6):
+      'save' 선언을 참조하십시오.
+  
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(26,16): error C2065: 'string_view': 선언되지 않은 식별자입니다.
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(26,28): error C2146: 구문 오류: ')'이(가) 'fileName' 식별자 앞에 없습니다.
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(28,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\김도윤\source\repos\2025 STL\2025 STL\메인.cpp(28,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
